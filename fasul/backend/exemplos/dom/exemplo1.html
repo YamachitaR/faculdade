@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Básico</h1>
+    <div>
+        <p id="msg">Mensagem</p>
+    </div>
+
+    <script>
+        //Recuperando o valor do elemento com id msg e 
+        //adicionado o em uma constante
+        const elementoMsg = document.getElementById('msg')
+
+
+        // Agora podemos utilizar as propriedades do elemento msg
+        // como se fosse um objeo que na verdade é uma tag Html;
+        elementoMsg.innerHTML = "Olá, mundo!"
+
+        // A  propriedade inneHtml é uma propriedade do objeto 
+        // que retorna ou define o conteúdo do texto do elemento HTML.
+    </script>
+</body>
+</html>
