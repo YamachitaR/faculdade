@@ -74,6 +74,7 @@ app.get(`/user2`, (req, res)=>{
 
 app.get('/view-usuario', (req, res) => {
     let nomeUsuario = req.query.nmUser
-    res.send(`<h1>Usuario:${nomeUsuario}</h1>`)
+    res.send(`<h1>Usuario:${nomeUsuario}</h1>`) // Obs: aqui não usa aspa, e sim crase
 })
 ~~~
+**OBS:** Usa crase quando temos variável 

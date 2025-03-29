@@ -51,5 +51,6 @@ Livro texto: Projeto web / Alexandre Carlos de Jesus.
 
 - [Introdução Express ](/notas/express.md)
 - [Exemplo](/exemplos/express/index.js)
-- Criação de rota
+- [Criação de rota](/notas/criandoRota.md)
 
+## Aula 10: Projeto - IMC
