@@ -42,4 +42,14 @@ Livro texto: Projeto web / Alexandre Carlos de Jesus.
 - [exemplo1](/exemplos/dom/exemplo1.html)
 
 
-## Aula 08:Instalação de note
+## Aula 08:Instalação de Node
+- [nota](/notas/instalandoNode.md)
+- [Criando primeiro server](/exemplos/primeiroServe/olaMundo.js) 
+- [CommonJS](/notas/CommonJS.md)
+
+## Aula 09: Introdução Express
+
+- [Introdução Express ](/notas/express.md)
+- [Exemplo](/exemplos/express/index.js)
+- Criação de rota
+
