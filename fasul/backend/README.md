@@ -54,3 +54,17 @@ Livro texto: Projeto web / Alexandre Carlos de Jesus.
 - [Criação de rota](/notas/criandoRota.md)
 
 ## Aula 10: Projeto - IMC
+- [notas](./notas/projetoIMC.md)
+- [projeto](/projetoIMC/index.js)
+
+
+## Aula 11: MongoDB
+- [Instalação e conexão com node](/notas/mongoDB.md)
+- [Exemplo](/exemplos/mongoDB/conexao.js)
+
+
+## Aula 12: Engine-View
+- [Handlebars](/notas/engineView.md)
+- [Exemplo de Handlebars](./exemplos/handlebars/index.js)
+
+
