@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handlebars</title>
+</head>
+<body>
+
+    <div>
+        <ul>
+            <li><a href="/" >Home</a></li>
+            <li><a href="/hi">hi</a></li>
+        </ul>
+    </div>
+    <!-- O template é o que vai ser repetido, ou seja, o que vai ser renderizado. -->
+    <!-- O {{{context}}} é um helper que permite que o contexto seja renderizado como texto -->
+    <!-- Deve-se colocar o contexto dentro de um bloco  de html, como <div> ou <p> -->
+    <div>
+        {{{body}}}
+    </div>
+    <footer>
+        <p>
+            <!-- O nomeView é um helper que permite  que o nome seja renderizado como texto. -->
+            <strong>{{nomeView}}</strong>
+        
+        </p>
+    </footer>
+</body>
+</html>
