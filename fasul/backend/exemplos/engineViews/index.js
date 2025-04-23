@@ -1,41 +1,33 @@
-// parte da configuração
-const express = require("express")
+// Importnado a conexão com banco de dados
 const conn = require("./db/conexao")
+const express = require("express")
 
-// swagger 
-const swaggerUi = require("swagger-ui-express")
-// const swaggerDocument = require("./swagger.json")
+// Criando  o app com o express
+const app = express ()
 
-// Adicionado nessa aula
+// Importando Hanslebars
 const exphbs = require("express-handlebars") 
+
+// Importnaod o body parses
 const bodyparser = require("body-parser") 
 
-// Parte da requisição 
-const app = express ()
+// Criando uma variavel para o porta do servidor
 const port = 3000
 
-app.use("/docs", swaggerUi.serve )
+// Importando a Rota
+const rotas  = require('./routes/rotas')
 
-
-
-app.use("/public", express.static(__dirname + "/public")) //add
-
-
-
-// Configurar o template  engine
+// Deixando a extensão do handlebars como .hbs para ficar mais amigavel 
 app.engine("hbs", exphbs.engine({extname:".hbs" })) //add Faz com que em vez a extensão seja .handlebars =: .hubs
+
+// Definindo qual Engine vamos utilizar 
 app.set("view engine", "hbs")
 
+// Executado as Rotas
+app.use('/', rotas) 
 
-// Rota 1
-app.get("/", (req, res)=>{
-    res.render("home",{nomeView:"Sou valor que é passado no fooot"})
-})
-
-// Rota 2
-app.get("/hi", (req, res)=>{
-    res.render('hi',{nomeView:"tchauuuuuu"} )
-})
+// Criando uma variável para o caminho da pasta publica  utilizando  o dicionario do projeto 
+app.use("/public", express.static(__dirname + "/public")) 
 
 
 app.listen(port,  () => console.log(`Conexao na porta:${port}`))

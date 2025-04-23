@@ -11,4 +11,6 @@ const router = express.Router()
 // Criando Rotas
 router.get('/', RoutesController.home)
 router.get('/guest', RoutesController.guest)
-router.get('/h1', RoutesController.hi)
+router.get('/hi', RoutesController.hi)
+
+module.exports = router

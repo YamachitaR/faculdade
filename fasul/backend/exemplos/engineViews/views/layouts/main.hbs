@@ -12,6 +12,7 @@
         <ul>
             <li><a href="/" >Home</a></li>
             <li><a href="/hi">hi</a></li>
+            <li><a href="/guest">guest</a></li>
         </ul>
     </div>
     <!-- O template é o que vai ser repetido, ou seja, o que vai ser renderizado. -->
@@ -23,7 +24,13 @@
     <footer>
         <p>
             <!-- O nomeView é um helper que permite  que o nome seja renderizado como texto. -->
-            <strong>{{nomeView}}</strong>
+            <strong>
+                {{#if nomeView}}    
+                    {{nomeView}}
+                {{else}}
+                    <span>{{user.nomeView}}</span>                
+                {{/if}}
+            </strong>
         
         </p>
     </footer>
